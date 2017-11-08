@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -14,11 +14,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-
                 <!--<action android:name="android.intent.action.SEND" />-->
                 <!--<category android:name="android.intent.category.DEFAULT" />-->
                 <!--&lt;!&ndash;<data android:scheme="http" android:host="www.youtube.com" android:mimeType="text/*" />&ndash;&gt;-->
-
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShareLoaderActivity">
+            <intent-filter>
                 <action android:name="android.intent.action.SEND"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="*/*"/>
