@@ -46,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
         buttonProcess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                buttonQuality240.setVisibility(View.GONE);
+                buttonQuality360.setVisibility(View.GONE);
+                buttonQuality720.setVisibility(View.GONE);
+                buttonQuality1080.setVisibility(View.GONE);
+
                 String url = etYoutubeLink.getText().toString();
                 progressBar.setVisibility(View.VISIBLE);
                 String[] parts = url.split("/");
